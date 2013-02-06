@@ -1,0 +1,18 @@
+%h1 Converting Distances
+
+%form{:action => convert_distance_path}
+  %input{:name => "unit_1"}
+  %select{:name => "unit_type_1"}
+    %option Feet
+    %option Meters
+    %option Yards
+
+  To
+
+  %select{:name => "unit_type_2"}
+    %option Feet
+    %option Meters
+    %option Yards
+
+  %button Go
+

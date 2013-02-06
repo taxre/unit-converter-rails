@@ -1,0 +1,17 @@
+%h1 Converting Weights
+
+%form{:action => convert_weight_path}
+  %input{:name => "unit_1"}
+  %select{:name => "unit_type_1"}
+    %option Pounds
+    %option Kilograms
+    %option Ounces
+
+  To
+
+  %select{:name => "unit_type_2"}
+    %option Pounds
+    %option Kilograms
+    %option Ounces
+
+  %button Go
