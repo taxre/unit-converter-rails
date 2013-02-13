@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/leequarella/unit-converter-gem.git
-  revision: 66287c345661e7a525a267258a6b96f118c8aed7
+  revision: 20aec034c22ba68ed76e64b0e7bb8279b14d5241
   specs:
-    unit_converter (0.0.1)
+    unit_converter (0.0.2)
 
 GEM
   remote: https://rubygems.org/
