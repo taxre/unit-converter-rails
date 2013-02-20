@@ -3,18 +3,29 @@
 %form{:action => convert_path}
   %input{:name => "amount"}
   %select{:name => "from_unit"}
+    %option Kilograms
+    %option Grams
+    %option Ounces
+    %option Celsius
+    %option Kelvin
+    %option Fahrenheit
     %option Feet
     %option Meters
-    %option Fahrenheit
-    %option Celsius
-    
+    %option Liters
+    %option Gallons
 
-  To
+    To
 
   %select{:name => "to_unit"}
+    %option Kilograms
+    %option Grams
+    %option Ounces
+    %option Celsius
+    %option Kelvin
+    %option Fahrenheit
     %option Feet
     %option Meters
-    %option Fahrenheit
-    %option Celsius
+    %option Liters
+    %option Gallons
 
   %button Go
