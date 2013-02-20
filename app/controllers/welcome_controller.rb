@@ -1,4 +1,7 @@
 class WelcomeController < ApplicationController
+  def index
+  end
+
   def convert
     @amount = params[:amount].to_f
     @from_unit = params[:from_unit].downcase
