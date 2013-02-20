@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'jquery-rails'
 gem 'rails', '3.2.11'
+gem 'thin'
 gem 'unit_converter', :git => "git://github.com/leequarella/unit-converter-gem.git"
 
 group :assets do
