@@ -1,3 +1,20 @@
-%a{:href => distances_path} Distances
-%a{:href => weights_path} Weights
-%a{:href => temperatures_path} Temperatures
+%h1 Converting Units
+
+%form{:action => convert_path}
+  %input{:name => "amount"}
+  %select{:name => "from_unit"}
+    %option Feet
+    %option Meters
+    %option Fahrenheit
+    %option Celsius
+    
+
+  To
+
+  %select{:name => "to_unit"}
+    %option Feet
+    %option Meters
+    %option Fahrenheit
+    %option Celsius
+
+  %button Go
