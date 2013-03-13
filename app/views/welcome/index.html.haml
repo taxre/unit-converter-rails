@@ -1,31 +1,37 @@
-%h1 Converting Units
 
-%form{:action => convert_path}
-  %input{:name => "amount"}
-  %select{:name => "from_unit"}
-    %option Kilograms
-    %option Grams
-    %option Ounces
-    %option Celsius
-    %option Kelvin
-    %option Fahrenheit
-    %option Feet
-    %option Meters
-    %option Liters
-    %option Gallons
+.border
 
-    To
+  .head
+    %h1 Unit Converter
 
-  %select{:name => "to_unit"}
-    %option Kilograms
-    %option Grams
-    %option Ounces
-    %option Celsius
-    %option Kelvin
-    %option Fahrenheit
-    %option Feet
-    %option Meters
-    %option Liters
-    %option Gallons
+  .body
+    %form{:action => convert_path}
+      %input{:name => "amount"}
+      %select{:name => "from_unit"}
+        %option Kilograms
+        %option Grams
+        %option Ounces
+        %option Celsius
+        %option Kelvin
+        %option Fahrenheit
+        %option Feet
+        %option Meters
+        %option Liters
+        %option Gallons
 
-  %button Go
+        To
+
+      %select{:name => "to_unit"}
+        %option Kilograms
+        %option Grams
+        %option Ounces
+        %option Celsius
+        %option Kelvin
+        %option Fahrenheit
+        %option Feet
+        %option Meters
+        %option Liters
+        %option Gallons -
+
+      <br>
+      %button Go

@@ -1,3 +1,77 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.border{
+  border: 15px groove #1e7c9a;
+  padding: 20px;
+  height: 600px;
+
+  background-image: url("/assets/bg0.jpg");
+  background-size: contain;
+  background-repeat:no-repeat;
+  -webkit-background-size: cover;
+          -moz-background-size: cover;
+                    background-size: cover;
+}
+
+
+.head{
+  font-size: 3em;
+  font-family: 'Lexograph';
+  text-shadow: 6px 6px 8px #1e2752;
+  filter: dropshadow(color=#1e2752, offx=3, offy=3);
+  -webkit-border-radius: 5px;
+  text-align: center;
+}
+
+.body{
+
+  text-align: center;
+
+  input {
+    border: 3px solid #006;
+    background: #ffc;
+    font-size: 18px;
+    font-family: 'Skranji';
+  }
+
+  select {
+    font-size: 16px;
+    font-family: 'Skranji', cursive;
+    margin: 0;
+    padding: 3;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid #ffffff;
+    padding: 5px 15px 5px 15px;
+    background: #1e7c9a;
+    white-space: nowrap;
+  }
+
+  button {
+    margin: 10px;
+    -moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+    background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+    background-color:#79bbff;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #84bbf3;
+    display:inline-block;
+    color:#ffffff;
+    font-family:arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #1e4266;
+    }
+}
+
