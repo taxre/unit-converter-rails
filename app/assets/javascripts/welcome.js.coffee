@@ -2,6 +2,63 @@ $ ->
   $('form').submit ->
     ajaxSubmit()
     return false
+  $("#type").click ->
+    typeSelected()
+
+@typeSelected = ->
+  type_val = $("#type").val()
+
+  if type_val is "Distance"
+    $("#from_unit select").remove()
+    $("#from_unit").append "<select name='from_unit'>" +
+                           "<option>Feet</option>" +
+                           "<option>Meters</option>" +
+                           "</select>"
+    $("#to_unit select").remove()
+    $("#to_unit").append "<select name='to_unit'>" +
+                         "<option>Feet</option>" +
+                         "<option>Meters</option>" +
+                         "</select>"
+
+  else if type_val is "Weight"
+    $("#from_unit select").remove()
+    $("#from_unit").append "<select name='from_unit'>" +
+                           "<option>Kilograms</option>" +
+                           "<option>Grams</option>" +
+                           "<option>Ounces</option>" +
+                           "</select>"
+    $("#to_unit select").remove()
+    $("#to_unit").append "<select name='to_unit'>" +
+                         "<option>Kilograms</option>" +
+                         "<option>Grams</option>" +
+                         "<option>Ounces</option>" +
+                         "</select>"
+
+  else if type_val is "Temperature"
+    $("#from_unit select").remove()
+    $("#from_unit").append "<select name='from_unit'>" +
+                           "<option>Celsius</option>" +
+                           "<option>Fahrenheit</option>" +
+                           "<option>Kelvin</option>" +
+                           "</select>"
+    $("#to_unit select").remove()
+    $("#to_unit").append "<select name='to_unit'>" +
+                         "<option>Celsius</option>" +
+                         "<option>Fahrenheit</option>" +
+                         "<option>Kelvin</option>" +
+                         "</select>"
+
+  else if type_val is "Volume"
+    $("#from_unit select").remove()
+    $("#from_unit").append "<select name='from_unit'>" +
+                           "<option>Liters</option>" +
+                           "<option>Gallons</option>" +
+                           "</select>"
+    $("#to_unit select").remove()
+    $("#to_unit").append "<select name='to_unit'>" +
+                         "<option>Liters</option>" +
+                         "<option>Gallons</option>" +
+                         "</select>"
 
 @ajaxSubmit = ->
   form = $('form')
@@ -25,7 +82,6 @@ $ ->
   $("button").show()
   $("#result").html("Sorry, I had a problem talking to the server.")
   console.log "Something went wrong."
-
 
 @spinOpts = {
   lines: 13, # The number of lines to draw
