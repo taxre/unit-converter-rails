@@ -13,5 +13,6 @@ class WelcomeController < ApplicationController
       @error = "Sorry, I don't know how to convert #{@from_unit} to 
       #{@to_unit}."
     end
+    render partial: 'conversion_result'
   end
 end
