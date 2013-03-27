@@ -5,34 +5,28 @@
 
   .body
     %form{:action => convert_path}
+
+      %select#type
+        %option -Unit Type-
+        %option Distance
+        %option Weight
+        %option Temperature
+        %option Volume
+
+      <br>
+      <br>
       %input{:name => "amount"}
-      %select{:name => "from_unit"}
-        %option Kilograms
-        %option Grams
-        %option Ounces
-        %option Celsius
-        %option Kelvin
-        %option Fahrenheit
-        %option Feet
-        %option Meters
-        %option Liters
-        %option Gallons
+
+      %span#from_unit
+        %select{:name => "from_unit"}
 
         To
 
-      %select{:name => "to_unit"}
-        %option Kilograms
-        %option Grams
-        %option Ounces
-        %option Celsius
-        %option Kelvin
-        %option Fahrenheit
-        %option Feet
-        %option Meters
-        %option Liters
-        %option Gallons -
+      %span#to_unit
+        %select{:name => "to_unit"}
 
       <br>
       %button Go
 
   #result
+
