@@ -26,12 +26,14 @@ $ ->
                            "<option>Kilograms</option>" +
                            "<option>Grams</option>" +
                            "<option>Ounces</option>" +
+                           "<option>Pounds</option>" +
                            "</select>"
     $("#to_unit select").remove()
     $("#to_unit").append "<select name='to_unit'>" +
                          "<option>Kilograms</option>" +
                          "<option>Grams</option>" +
                          "<option>Ounces</option>" +
+                         "<option>Pounds</option>" +
                          "</select>"
 
   else if type_val is "Temperature"
